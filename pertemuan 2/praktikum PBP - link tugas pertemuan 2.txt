@@ -6,5 +6,5 @@ https://youtu.be/7PRKxPRWyg0
 
 
 link tugas github pertemuan 02 :
-https://github.com/007-Ryan/praktikum-platform/tree/main/pertemuan02
+https://github.com/007-Ryan/praktikum-platform/tree/main/pertemuan%202
 
