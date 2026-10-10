@@ -1,0 +1,131 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Profil - Component Based</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            margin: 40px auto;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile-image {
+            width: 88px;
+            height: 88px;
+            flex-shrink: 0;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .profile-name {
+            margin: 0 0 8px;
+            font-size: 20px;
+            overflow-wrap: anywhere;
+        }
+
+        .profile-nim {
+            margin: 0 0 16px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #2563eb;
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        @media (max-width: 400px) {
+            body {
+                padding: 16px;
+            }
+
+            .container {
+                margin: 24px auto;
+            }
+
+            .card {
+                gap: 12px;
+                padding: 16px;
+            }
+
+            .profile-image {
+                width: 64px;
+                height: 64px;
+            }
+
+            .profile-name {
+                font-size: 17px;
+            }
+
+            .btn {
+                padding: 9px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <article class="card">
+            <img
+                class="profile-image"
+                src="https://i.pravatar.cc/160?img=47"
+                alt="Foto profil Citra"
+            >
+
+            <div class="profile-info">
+                <h1 class="profile-name">Citra</h1>
+                <p class="profile-nim">NIM: 2026002</p>
+                <a class="btn" href="https://example.com">
+                    Lihat Profil
+                </a>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
+```
