@@ -1,0 +1,3 @@
+# Abaikan file video MP4
+*.mp4
+**/node_modules/
