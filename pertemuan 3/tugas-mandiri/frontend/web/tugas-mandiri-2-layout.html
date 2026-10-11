@@ -1,0 +1,111 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+
+    <!-- Navigasi -->
+    <nav class="bg-blue-700 text-white shadow-md">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
+            <a href="#" class="text-xl font-bold">Profil Mahasiswa</a>
+            <div class="flex flex-wrap gap-4">
+                <a href="#beranda" class="hover:text-yellow-300">Beranda</a>
+                <a href="#profil" class="hover:text-yellow-300">Profil</a>
+                <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Pembuka (Hero) -->
+    <header id="beranda" class="bg-white">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-6 px-4 py-12 md:grid-cols-2 md:py-20">
+            <div>
+                <p class="mb-3 font-semibold uppercase tracking-widest text-blue-600">
+                    Mahasiswa Informatika
+                </p>
+                <h1 class="mb-4 text-3xl font-bold leading-tight md:text-5xl">
+                    Selamat Datang di Profil Mahasiswa
+                </h1>
+                <p class="mb-6 leading-relaxed text-slate-600">
+                    Halaman ini dibuat untuk mempelajari penggunaan class utility
+                    Tailwind CSS dalam menyusun tata letak yang responsif.
+                </p>
+                <a href="#profil"
+                   class="inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-800">
+                    Lihat Informasi
+                </a>
+            </div>
+
+            <div class="rounded-2xl bg-blue-100 p-8 text-center">
+                <div class="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-blue-700 text-3xl font-bold text-white">
+                    M
+                </div>
+                <h2 class="text-2xl font-bold">Mahasiswa</h2>
+                <p class="mt-2 text-slate-600">
+                    Belajar, Berkarya, dan Berkembang
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tiga Kartu Konten -->
+    <main id="profil" class="mx-auto max-w-6xl px-4 py-12">
+        <div class="mb-8 text-center">
+            <h2 class="text-2xl font-bold md:text-3xl">Informasi Mahasiswa</h2>
+            <p class="mt-2 text-slate-600">
+                Tiga informasi utama dalam satu halaman.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <!-- Kartu 1 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 text-2xl">
+                    👤
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Biodata</h3>
+                <p class="leading-relaxed text-slate-600">
+                    Berisi informasi identitas, program studi, dan data diri mahasiswa.
+                </p>
+            </article>
+
+            <!-- Kartu 2 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 text-2xl">
+                    📚
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Jadwal Kuliah</h3>
+                <p class="leading-relaxed text-slate-600">
+                    Menampilkan informasi jadwal perkuliahan dan kegiatan belajar.
+                </p>
+            </article>
+
+            <!-- Kartu 3 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-100 text-2xl">
+                    💡
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Kegiatan</h3>
+                <p class="leading-relaxed text-slate-600">
+                    Berisi kegiatan mahasiswa, pengalaman, dan pengembangan keterampilan.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="mt-8 bg-slate-800 px-4 py-6 text-center text-white">
+        <p class="font-semibold">Profil Mahasiswa</p>
+        <p class="mt-2 text-sm text-slate-300">
+            Dibuat untuk Praktikum Pemrograman Berbasis Platform &copy; 2026
+        </p>
+    </footer>
+
+</body>
+</html>
+```
